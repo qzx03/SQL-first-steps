@@ -30,3 +30,8 @@ FOREIGN KEY (article_id) references article(id)
 SHOW TABLES;
 
 INSERT INTO user1 (name, email, password) VALUES ('ali', 'alidagoat123@test.com', 'password');
+
+ALTER TABLE user1 ADD INDEX (email);
+
+ALTER TABLE user1
+COMMENT = 'blog user table';
