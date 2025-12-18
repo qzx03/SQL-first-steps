@@ -6,7 +6,7 @@ CREATE TABLE user1 (
 id INT auto_increment PRIMARY KEY,
 name VARCHAR(100) NOT NULL,
 email VARCHAR(200) UNIQUE,
-password VARCHAR(10) NOT NULL
+password VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Article (
@@ -26,3 +26,7 @@ C_date date,
 article_id INT,
 FOREIGN KEY (article_id) references article(id)
 );
+
+SHOW TABLES;
+
+INSERT INTO user1 (name, email, password) VALUES ('ali', 'alidagoat123@test.com', 'password');
